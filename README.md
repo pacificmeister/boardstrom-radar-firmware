@@ -30,6 +30,16 @@ Re-flashing an updated release later works exactly the same way — the
 module's bootloader stays in place, so your sensor is never locked to a
 firmware version.
 
+## Troubleshooting: sensor doesn't start / no broadcasts
+
+Check the XA122's center (negative) battery pad before assembly. On boards
+we've received, that pad came from the factory as bare, untinned copper. The
+CR2477 cell makes poor contact on bare copper (high contact resistance) and
+the module never powers up properly. The fix: apply flux and tin the pad with
+a thin, even layer of solder, then re-seat the cell. This is the one known
+exception to "no soldering". Details and photos in the
+[build guide](https://boardstrom.com/tank-sensor).
+
 ## What's in this repository
 
 Release binaries and release notes only. The firmware source is not published
