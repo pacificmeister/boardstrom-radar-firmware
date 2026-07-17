@@ -40,6 +40,14 @@ a thin, even layer of solder, then re-seat the cell. This is the one known
 exception to "no soldering". Details and photos in the
 [build guide](https://boardstrom.com/tank-sensor).
 
+## Broadcast format (build your own receiver)
+
+The sensor's Bluetooth advertisement is documented in
+[docs/ble-advert-v1.md](docs/ble-advert-v1.md): a plaintext, keyless
+manufacturer-data broadcast (distance, battery, temperature, status,
+counter, sensor id) plus the Boost wake-signal UUID. Anything that can scan
+BLE can read it — ESPHome/Home Assistant decoders welcome.
+
 ## What's in this repository
 
 Release binaries and release notes only. The firmware source is not published
