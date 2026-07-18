@@ -40,6 +40,17 @@ a thin, even layer of solder, then re-seat the cell. This is the one known
 exception to "no soldering". Details and photos in the
 [build guide](https://boardstrom.com/tank-sensor).
 
+## 3D-printable tank mounts
+
+Snap-in holders for the CA122 puck, one per lid variant, modeled against
+the real casings. Print, glue or bolt the ring to the tank, snap the
+sensor in:
+
+- [mounts/CA122FZP_mount.stl](mounts/CA122FZP_mount.stl) — for the standard
+  lens lid (CA122-FZP)
+- [mounts/CA122FL_mount.stl](mounts/CA122FL_mount.stl) — for the flat lid
+  (CA122-FL)
+
 ## Broadcast format (build your own receiver)
 
 The sensor's Bluetooth advertisement is documented in
