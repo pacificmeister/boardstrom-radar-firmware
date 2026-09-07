@@ -2,7 +2,10 @@
 
 Free firmware for the DIY **Boardstrom Tank Sensor**: a wireless radar tank
 level sensor you build from off-the-shelf Acconeer parts (XM126 + XA122 +
-CA122 + a CR2477 cell) — no holes drilled in the tank, no wires, no soldering.
+CA122 + a CR2477 cell) — no holes drilled in the tank, no wiring, nothing to
+assemble beyond snapping the boards together. One caveat: the XA122's centre
+battery pad can come untinned from the factory and then needs a dab of solder
+(see the build guide, assembly step 2).
 It reads the liquid level through the tank wall with 60 GHz radar and
 broadcasts over Bluetooth to the free
 [Boardstrom app](https://boardstrom.com) (iOS / Android).
