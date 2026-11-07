@@ -1,5 +1,10 @@
 # Boardstrom tank sensor — BLE advertisement format v1
 
+> **Superseded.** This is the format of firmware beta.1 to beta.3. Current
+> firmware (beta.4 and later) sends v2: see [ble-advert-v2.md](ble-advert-v2.md).
+> The Boost wake signal described below was removed in beta.5; current sensors
+> never scan and ignore it.
+
 Keyless plaintext manufacturer-data advert in the Ruuvi/Mopeka style: the
 sensor broadcasts, the app passively scans, no pairing, no cloud, no account.
 Fill % is computed app-side after tank calibration; the sensor only reports

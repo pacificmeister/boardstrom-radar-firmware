@@ -57,10 +57,11 @@ sensor in:
 ## Broadcast format (build your own receiver)
 
 The sensor's Bluetooth advertisement is documented in
-[docs/ble-advert-v1.md](docs/ble-advert-v1.md): a plaintext, keyless
+[docs/ble-advert-v2.md](docs/ble-advert-v2.md): a plaintext, keyless
 manufacturer-data broadcast (distance, battery, temperature, status,
-counter, sensor id) plus the Boost wake-signal UUID. Anything that can scan
-BLE can read it — ESPHome/Home Assistant decoders welcome.
+counter, sensor id, firmware release). Anything that can scan BLE can read
+it, and ESPHome/Home Assistant decoders are welcome. The older beta.1 to
+beta.3 format is in [docs/ble-advert-v1.md](docs/ble-advert-v1.md).
 
 ## What's in this repository
 
